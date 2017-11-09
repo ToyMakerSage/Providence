@@ -17,7 +17,7 @@ namespace Providence
         {
             discord = new DiscordClient(new DiscordConfiguration
             {
-                Token = "Token Place Holder",
+                Token = "Place Holder",
                 TokenType = TokenType.Bot,
                 UseInternalLogHandler = true,
                 LogLevel = LogLevel.Debug
@@ -35,6 +35,7 @@ namespace Providence
                     await e.Message.RespondAsync("pong!");
                 }
             };
+            commands.RegisterCommands<commands>();
             await discord.ConnectAsync();
             await Task.Delay(-1);
         }
