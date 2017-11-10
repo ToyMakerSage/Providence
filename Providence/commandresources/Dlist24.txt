@@ -1,10 +1,6 @@
-24mandungeon1
-24mandungeon2
-24mandungeon3
-24mandungeon4
-24mandungeon5
-24mandungeon6
-24mandungeon7
-24mandungeon8
-24mandungeon9
-24mandungeon10
+Labyrinth of the Ancients
+Sycrus Tower
+The Void Ark
+The Weeping City of Mhach
+Dun Scaith
+The Royal City of Rabanastre

@@ -1,10 +1,37 @@
-8mandungeon1
-8mandungeon2
-8mandungeon3
-8mandungeon4
-8mandungeon5
-8mandungeon6
-8mandungeon7
-8mandungeon8
-8mandungeon9
-8mandungeon10
+Castrum Meridianum
+The Praetorium
+Cape Westwind
+The Chrysalis
+The Steps of Faith
+A Relic Reborn: The Chimera
+A Relic Reborn: The Hydra
+Battle on the Big Bridge
+The Dragon's Neck
+Battle in the Big Keep
+The Bowl of Embers (Hard)
+The Howling Eye (Hard)
+The Navel (Hard)
+Thornmarch (Hard)
+The Whorleater (Hard)
+The Striking Tree (Hard)
+Akh Afah Amphitheatre (Hard)
+Urth's Fount
+Thok ast Thok (Hard)
+The Limitless Blue (Hard)
+The Singularity Reactor
+Containment Bay S1T7
+Containment Bay P1T6
+Containment Bay Z1T9
+The Pool of Tribute
+Emanation
+The Royal Menagerie
+HW Raid 1
+HW Raid 2
+HW Raid 3
+SB Raid 1
+SB Raid 2
+SB Raid 3
+ARR High End Trial
+HW High End Trial
+SB High End Trial
+Legacy Savage

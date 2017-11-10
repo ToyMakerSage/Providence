@@ -1,10 +1,56 @@
-4mandungeon1
-4mandungeon2
-4mandungeon3
-4mandungeon4
-4mandungeon5
-4mandungeon6
-4mandungeon7
-4mandungeon8
-4mandungeon9
-4mandungeon10
+Sastasha
+The Tam-Tara Deepcroft
+Copperbell Mines
+Halatali
+The Thousand Maws of Toto-Rak
+Haukke Manor
+Brayflox's Longstop
+The Sunken Temple of Qarn
+Cutter's Cry
+The Stone Vigil
+Dzemael Darkhold
+The Aurum Vale
+The Wanderer's Palace
+Amdapor Keep
+Pharos Sirius
+Copperbell Mines (Hard)
+Haukke Manor (Hard)
+The Lost City of Amdapor
+Halatali (Hard)
+Brayflox's Longstop (Hard)
+Hullbreaker Isle
+The Stone Vigil (Hard)
+Tam-Tara Deepcroft (Hard)
+Snowcloak
+Sastasha (Hard)
+The Sunken Temple of Qarn (Hard)
+The Keeper of the Lake
+The Wanderer's Palace (Hard)
+Amdapor Keep (Hard)
+The Dusk Vigil
+Sohm Al
+The Aery
+The Vault
+The Great Gubal Library
+The Aetherochemical Research Facility
+Neverreap
+The Fractal Continuum
+Saint Mocianne's Arboretum
+Pharos Sirius (Hard)
+The Antitower
+The Lost City of Amdapor (Hard)
+Sohr Khai
+Hullbreaker Isle (Hard)
+Xelphatol
+The Great Gubal Library (Hard)
+Baelsar's Wall
+Sohm Al (Hard)
+The Sirensong Sea
+Shisui of the Violet Tides
+Bardam's Mettle
+Doma Castle
+Castrum Abania
+Ala Mhigo
+Kugane Castle
+The Temple of the Fist
+The Drowned City of Skalla
