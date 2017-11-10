@@ -25,13 +25,13 @@ Containment Bay Z1T9
 The Pool of Tribute
 Emanation
 The Royal Menagerie
-HW Raid 1
-HW Raid 2
-HW Raid 3
-SB Raid 1
-SB Raid 2
-SB Raid 3
-ARR High End Trial
-HW High End Trial
-SB High End Trial
+Raid
+Raid
+Raid
+Raid
+Raid
+Raid
+High End Trial
+High End Trial
+High End Trial
 Legacy Savage
