@@ -21,12 +21,10 @@ namespace Providence
                 TokenType = TokenType.Bot,
                 UseInternalLogHandler = true,
                 LogLevel = LogLevel.Debug
-
-
             });
             commands = discord.UseCommandsNext(new CommandsNextConfiguration
             {
-                StringPrefix = ">"
+                StringPrefix = "^"
             });
             discord.MessageCreated += async e =>
             {
