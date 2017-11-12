@@ -17,7 +17,7 @@ namespace Providence
         {
             discord = new DiscordClient(new DiscordConfiguration
             {
-                Token = "Placeholder",
+                Token = "placeholder",
                 TokenType = TokenType.Bot,
                 UseInternalLogHandler = true,
                 LogLevel = LogLevel.Debug
