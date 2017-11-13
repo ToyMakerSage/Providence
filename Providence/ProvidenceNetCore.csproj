@@ -11,7 +11,7 @@
     <RepositoryUrl>http://github.com/ToyFactorySage/Providence</RepositoryUrl>
     <PackageTags>Discord Bot</PackageTags>
     <NeutralLanguage>en-GB</NeutralLanguage>
-    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <ApplicationIcon>favicon(1).ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
