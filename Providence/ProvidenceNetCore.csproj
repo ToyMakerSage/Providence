@@ -3,6 +3,14 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Version>0.1.2.0</Version>
+    <Authors>ToyFactorySage</Authors>
+    <Company>ToyFactorySage</Company>
+    <Product>Providence</Product>
+    <PackageProjectUrl>http://github.com/ToyFactorySage/Providence</PackageProjectUrl>
+    <RepositoryUrl>http://github.com/ToyFactorySage/Providence</RepositoryUrl>
+    <PackageTags>Discord Bot</PackageTags>
+    <NeutralLanguage>en-GB</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
