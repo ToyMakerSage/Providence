@@ -2,10 +2,13 @@
 using DSharpPlus;
 using System.Threading.Tasks;
 using DSharpPlus.CommandsNext;
+using System.IO;
+using System.Text;
+using Newtonsoft.Json;
 
 namespace Providence
 {
-    class Program
+    public class Program
     {
         static DiscordClient discord;
         static CommandsNextModule commands;
@@ -15,17 +18,25 @@ namespace Providence
         }
         static async Task MainAsync(string[] args)
         {
-            discord = new DiscordClient(new DiscordConfiguration
+            var json = "";
+            using (var fs = File.OpenRead("config.json"))
+            using (var sr = new StreamReader(fs, new UTF8Encoding(false)))
+                json = await sr.ReadToEndAsync();
+            var cfgjson = JsonConvert.DeserializeObject<ConfigJson>(json);
+            var cfg = new DiscordConfiguration
             {
-                Token = "Placeholder",
+                Token = cfgjson.Token,
                 TokenType = TokenType.Bot,
-                UseInternalLogHandler = true,
-                LogLevel = LogLevel.Debug
-            });
-            commands = discord.UseCommandsNext(new CommandsNextConfiguration
+                AutoReconnect = true,
+                LogLevel = LogLevel.Debug,
+                UseInternalLogHandler = true
+            };
+            discord = new DiscordClient(cfg);
+            var cfgcmd = new CommandsNextConfiguration
             {
-                StringPrefix = "^"
-            });
+                StringPrefix = cfgjson.StringPrefix
+            };
+            commands = discord.UseCommandsNext(cfgcmd);
             discord.MessageCreated += async e =>
             {
                 if (e.Message.Content.ToLower().StartsWith("ping"))
@@ -37,5 +48,15 @@ namespace Providence
             await discord.ConnectAsync();
             await Task.Delay(-1);
         }
+    }
+
+    public struct ConfigJson
+    {
+        [JsonProperty("token")]
+        public string Token { get; private set; }
+
+        [JsonProperty("prefix")]
+        public string StringPrefix { get; private set; }
+
     }
 }
