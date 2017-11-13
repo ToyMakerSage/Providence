@@ -31,21 +31,28 @@ namespace Providence
                 LogLevel = LogLevel.Debug,
                 UseInternalLogHandler = true
             };
-            discord = new DiscordClient(cfg);
-            var cfgcmd = new CommandsNextConfiguration
+            if (cfgjson.Token != "Replace Me!")
             {
-                StringPrefix = cfgjson.StringPrefix
-            };
-            commands = discord.UseCommandsNext(cfgcmd);
-            discord.MessageCreated += async e =>
-            {
-                if (e.Message.Content.ToLower().StartsWith("ping"))
+                discord = new DiscordClient(cfg);
+                var cfgcmd = new CommandsNextConfiguration
                 {
-                    await e.Message.RespondAsync("pong!");
-                }
-            };
-            commands.RegisterCommands<commands>();
-            await discord.ConnectAsync();
+                    StringPrefix = cfgjson.StringPrefix
+                };
+                commands = discord.UseCommandsNext(cfgcmd);
+                discord.MessageCreated += async e =>
+                {
+                    if (e.Message.Content.ToLower().StartsWith("ping"))
+                    {
+                        await e.Message.RespondAsync("pong!");
+                    }
+                };
+                commands.RegisterCommands<commands>();
+                await discord.ConnectAsync();
+            }
+            else
+            {
+                Console.WriteLine("ERROR: User has not replace default token. Replace 'Replace Me!' in config.json");
+            }
             await Task.Delay(-1);
         }
     }
