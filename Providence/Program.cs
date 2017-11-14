@@ -31,7 +31,7 @@ namespace Providence
                 LogLevel = LogLevel.Debug,
                 UseInternalLogHandler = true
             };
-            if (cfgjson.Token != "Replace Me!")
+            if(cfgjson.Token != "Replace Me!")
             {
                 discord = new DiscordClient(cfg);
                 var cfgcmd = new CommandsNextConfiguration
