@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvidenceNetCore", "Providence\ProvidenceNetCore.csproj", "{F805807C-6B00-48C3-B816-DD22E95903BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Providence461", "Providence461\Providence461.csproj", "{662885CF-2D23-49FC-90B1-B6443305C9A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Providence", "Providence461\Providence.csproj", "{662885CF-2D23-49FC-90B1-B6443305C9A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
