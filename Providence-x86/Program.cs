@@ -1,10 +1,10 @@
-﻿using System;
-using DSharpPlus;
+﻿using DSharpPlus;
 using System.Threading.Tasks;
 using DSharpPlus.CommandsNext;
 using System.IO;
 using System.Text;
 using Newtonsoft.Json;
+using System;
 
 namespace Providence
 {

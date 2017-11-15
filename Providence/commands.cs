@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
-using DSharpPlus.ModernEmbedBuilder;
 using DSharpPlus.Entities;
 
 namespace Providence
