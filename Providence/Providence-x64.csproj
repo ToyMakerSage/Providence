@@ -80,8 +80,11 @@
     <Reference Include="DSharpPlus.Interactivity, Version=3.2.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DSharpPlus.Interactivity.3.2.3\lib\net47\DSharpPlus.Interactivity.dll</HintPath>
     </Reference>
-    <Reference Include="DSharpPlus.ModernEmbedBuilder, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DSharpPlus.ModernEmbedBuilder.1.0.0\lib\net47\DSharpPlus.ModernEmbedBuilder.dll</HintPath>
+    <Reference Include="DSharpPlus.ModernEmbedBuilder, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DSharpPlus.ModernEmbedBuilder.1.0.1\lib\net47\DSharpPlus.ModernEmbedBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="DSharpPlus.Rest, Version=3.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DSharpPlus.Rest.3.2.3\lib\net47\DSharpPlus.Rest.dll</HintPath>
     </Reference>
     <Reference Include="DSharpPlus.VoiceNext, Version=3.2.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DSharpPlus.VoiceNext.3.2.3\lib\net47\DSharpPlus.VoiceNext.dll</HintPath>
