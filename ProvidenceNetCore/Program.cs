@@ -5,6 +5,8 @@ using DSharpPlus.CommandsNext;
 using System.IO;
 using System.Text;
 using Newtonsoft.Json;
+using DSharpPlus.Net;
+using System.Net;
 
 namespace Providence
 {

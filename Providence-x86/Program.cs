@@ -1,10 +1,12 @@
-﻿using DSharpPlus;
+﻿using System;
+using DSharpPlus;
 using System.Threading.Tasks;
 using DSharpPlus.CommandsNext;
 using System.IO;
 using System.Text;
 using Newtonsoft.Json;
-using System;
+using DSharpPlus.Net;
+using System.Net;
 
 namespace Providence
 {
@@ -31,7 +33,7 @@ namespace Providence
                 LogLevel = LogLevel.Debug,
                 UseInternalLogHandler = true
             };
-            if(cfgjson.Token != "Replace Me!")
+            if (cfgjson.Token != "Replace Me!")
             {
                 discord = new DiscordClient(cfg);
                 var cfgcmd = new CommandsNextConfiguration
