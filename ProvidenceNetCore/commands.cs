@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
-using DSharpPlus.ModernEmbedBuilder;
 using DSharpPlus.Entities;
 
 namespace Providence
@@ -17,6 +16,28 @@ namespace Providence
         string[,] DlistSavage = new string[26, 2] { { "The Binding Coil of Bahamut Turn 1", "https://i.imgur.com/ACmXBBb.png" }, { "The Binding Coil of Bahamut Turn 2", "https://i.imgur.com/YhqvdB4.png" }, { "The Binding Coil of Bahamut Turn 3", "https://i.imgur.com/eHIz3EL.png" }, { "The Binding Coil of Bahamut Turn 4", "https://i.imgur.com/RXoPlTx.png" }, { "The Binding Coil of Bahamut Turn 5", "https://i.imgur.com/vxxQ3io.png" }, { "The Second Binding Coil of Bahamut Turn 1", "https://i.imgur.com/rgy2Fvj.png" }, { "The Second Binding Coil of Bahamut Turn 2", "https://i.imgur.com/wScgIRR.png" }, { "The Second Binding Coil of Bahamut Turn 3", "https://i.imgur.com/x1EIaco.png" }, { "The Second Binding Coil of Bahamut Turn 4", "https://i.imgur.com/464FzEI.png" }, { "The Final Binding Coil of Bahamut Turn 1", "https://i.imgur.com/mqiEIEl.png" }, { "The Final Binding Coil of Bahamut Turn 2", "https://i.imgur.com/LwbKkPY.png" }, { "The Final Binding Coil of Bahamut Turn 3", "https://i.imgur.com/cDLI6Aj.png" }, { "The Final Binding Coil of Bahamut Turn 4", "https://i.imgur.com/dDDfpiT.png" }, { "Alexander Gordias - The Fist of the Father (Savage)", "https://i.imgur.com/GmC1Lfw.png" }, { "Alexander Gordias - The Cuff of the Father (Savage)", "https://i.imgur.com/4LLIHc9.png" }, { "Alexander Gordias - The Arm of the Father (Savage)", "https://i.imgur.com/oUU39rh.png" }, { "Alexander Gordias - The Burden of the Father (Savage)", "https://i.imgur.com/7hQa7NW.png" }, { "Alexander Midas - The Fist of the Son (Savage)", "https://i.imgur.com/5dweyJS.png" }, { "Alexander Midas - The Cuff of the Son (Savage)", "https://i.imgur.com/ejbWr1s.png" }, { "Alexander Midas - The Arm of the Son (Savage)", "https://i.imgur.com/DH8nRSF.png" }, { "Alexander Midas - The Burden of the Son (Savage)", "https://i.imgur.com/ck1uvA8.png" }, { "Alexander Creator - The Eyes of the Creator (Savage)", "https://i.imgur.com/en0YGyQ.png" }, { "Alexander Creator - The Breath of the Creator (Savage)", "https://i.imgur.com/Gs1s9Dy.png" }, { "Alexander Creator - The Heart of the Creator (Savage)", "https://i.imgur.com/RpvdZej.png" }, { "Alexander Creator - The Soul of the Creator (Savage)", "https://i.imgur.com/x2Y4iym.png" }, { "The Second Binding Coil of Bahamut (Savage)", "https://i.imgur.com/rgy2Fvj.png" } };
         string[,] DlistStoryRaid = new string[16, 2] { { "Alexander Gordias - The Fist of the Father", "https://i.imgur.com/GmC1Lfw.png" }, { "Alexander Gordias - The Cuff of the Father", "https://i.imgur.com/4LLIHc9.png" }, { "Alexander Gordias - The Arm of the Father", "https://i.imgur.com/oUU39rh.png" }, { "Alexander Gordias - The Burden of the Father", "https://i.imgur.com/7hQa7NW.png" }, { "Alexander Midas - The Fist of the Son", "https://i.imgur.com/5dweyJS.png" }, { "Alexander Midas - The Cuff of the Son", "https://i.imgur.com/ejbWr1s.png" }, { "Alexander Midas - The Arm of the Son", "https://i.imgur.com/DH8nRSF.png" }, { "Alexander Midas - The Burden of the Son", "https://i.imgur.com/ck1uvA8.png" }, { "Alexander Creator - The Eyes of the Creator", "https://i.imgur.com/en0YGyQ.png" }, { "Alexander Creator - The Breath of the Creator", "https://i.imgur.com/Gs1s9Dy.png" }, { "Alexander Creator - The Heart of the Creator", "https://i.imgur.com/RpvdZej.png" }, { "Alexander Creator - The Soul of the Creator", "https://i.imgur.com/x2Y4iym.png" }, { "Omega Deltascape - V1.0", "https://i.imgur.com/GxaAC4l.png" }, { "Omega Deltascape - V2.0", "https://i.imgur.com/zpYUgwH.png" }, { "Omega Deltascape - V3.0", "https://i.imgur.com/AHAU9VB.png" }, { "Omega Deltascape - V4.0", "https://i.imgur.com/IvTxIYn.png" } };
         string[] SpecialRules = new string[] { "Minimum Item Level", "M A N M O D E", "All DPS Must be Casters", "All DPS Must be Ranged Physical", "All DPS Must be Melee", "All DPS slots must be filled with Healers", "All DPS slots must be filled with Tanks", "Speed Run" };
+        string[,] DlistC = new string[4, 2] { { "Ala Mhigo", "https://i.imgur.com/Sxw3irH.png" }, { "Kugane Castle", "https://i.imgur.com/g22wgum.png" }, { "The Temple of the Fist", "https://i.imgur.com/gaAwE84.png" }, { "The Drowned City of Skalla", "https://i.imgur.com/9mwEPRn.png" } };
+        string[] SpecialRulesC = new string[] { "Minimum Item Level", "All DPS Must be Ranged Physical", "All DPS Must be Melee", "All DPS Must be Casters", "Speed Run", "No soulstones", "Healers: Regens only", "Healers: Shields only", "Role actions are forbidden", "Diversion and Provoke are forbidden", "Don't stop pulling", "Healers: Cures only", "AoE Threat Generators are Forbidden", "M A N M O D E", "Curse" };
+
+        [Command("creation"), Description("A Pseudo Duty Roulette")]
+        public async Task Roulette(CommandContext ctx)
+        {
+            int randomIndex = rng.Next(DlistC.GetLength(0));
+            int randomIndexSR = rng.Next(SpecialRulesC.Length);
+            string text = DlistC[randomIndex, 0];
+            string text2 = DlistC[randomIndex, 1];
+            string text3 = SpecialRulesC[randomIndexSR];
+            if (text3 == "Curse")
+            {
+                text3 = "Minimum Item Level and " + SpecialRulesC[rng.Next(2, SpecialRulesC.Length - 1)];
+            }
+            var embed = new DiscordEmbedBuilder();
+            embed.WithTitle("Providence Roulette: Creation Grind").WithDescription("*Your next dungeon has been prepared.*").WithImageUrl(text2).WithColor(new DiscordColor(172, 225, 175));
+            embed.AddField("**Duty**", "*" + text + "*", true);
+            embed.AddField("**Type**", "*Expert Dungeon*", true);
+            embed.AddField("**Special Rules**", "*" + text3 + "*", false);
+            await ctx.RespondAsync("", embed: embed);
+        }
         [Command("roulette"), Description("A Pseudo Duty Roulette")]
         public async Task Roulette(CommandContext ctx, int size)
         {
