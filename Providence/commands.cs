@@ -18,9 +18,8 @@ namespace Providence
         string[] SpecialRules = new string[] { "Minimum Item Level" , "M A N M O D E", "All DPS Must be Casters", "All DPS Must be Ranged Physical", "All DPS Must be Melee", "All DPS slots must be filled with Healers", "All DPS slots must be filled with Tanks", "Speed Run" };
         string[,] DlistC = new string[4, 2] { { "Ala Mhigo", "https://i.imgur.com/Sxw3irH.png" }, { "Kugane Castle", "https://i.imgur.com/g22wgum.png" }, { "The Temple of the Fist", "https://i.imgur.com/gaAwE84.png" }, { "The Drowned City of Skalla", "https://i.imgur.com/9mwEPRn.png" } };
         string[] SpecialRulesC = new string[] { "Minimum Item Level", "All DPS Must be Ranged Physical", "All DPS Must be Melee", "All DPS Must be Casters", "Speed Run", "No soulstones", "Healers: Regens only", "Healers: Shields only", "Role actions are forbidden", "Diversion and Provoke are forbidden", "Don't stop pulling", "Healers: Cures only", "AoE Threat Generators are Forbidden", "M A N M O D E","Curse" };
-
-        [Command("creation"), Description("A Pseudo Duty Roulette")]
-        public async Task Roulette(CommandContext ctx)
+        [Command("creation"), Description("A Pseudo Duty Roulette for Creation Grinding")]
+        public async Task Creation(CommandContext ctx)
         {
             int randomIndex = rng.Next(DlistC.GetLength(0));
             int randomIndexSR = rng.Next(SpecialRulesC.Length);
